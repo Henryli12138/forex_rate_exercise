@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  
+}
+
+.even-row td {
+  border: 2px solid red;
+}
