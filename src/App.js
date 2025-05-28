@@ -34,14 +34,14 @@ const App = () => {
     const getRates = async () => {
       try {
         // Fetch forex rates from the API
-        const fetchedRates = await fetchForexRates();
+        const fetchedRates = await fetchForexRates()
         setRates(fetchedRates);
 
         // Create a new variable with the previous obtained data from the REST API call, 
         // but in this new variable, add 10.0002 to each values of those currencies.
         const updatedRates = {};
         for (const currency in fetchedRates) {
-          updatedRates[currency] = (fetchedRates[currency] + 10.0002).toFixed(4);
+          updatedRates[currency] = (fetchedRates[currency] + 10.0002);
         }
         setModifiedRates(updatedRates);
       } catch (error) {
